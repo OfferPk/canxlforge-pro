@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#111927" />
+    </linearGradient>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Grid overlay -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="490" x2="1200" y2="490" />
+    <line x1="0" y1="560" x2="1200" y2="560" />
+    <line x1="0" y1="630" x2="1200" y2="630" />
+  </g>
+
+  <!-- Top Bar -->
+  <rect x="30" y="25" width="1140" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <circle cx="55" cy="55" r="8" fill="#ef4444" />
+  <circle cx="75" cy="55" r="8" fill="#f59e0b" />
+  <circle cx="95" cy="55" r="8" fill="#10b981" />
+  <text x="125" y="60" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">CANXLForge Pro</text>
+  <text x="285" y="60" fill="#94a3b8" font-family="monospace" font-size="13">ISO 11898-1:2024 &amp; CiA 610-1 Studio [v1.0.0]</text>
+  <rect x="950" y="38" width="200" height="34" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+  <text x="965" y="60" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="600">● 10/10 PASS Normative</text>
+
+  <!-- Left Column: Frame Form & Control Fields -->
+  <rect x="30" y="105" width="550" height="565" rx="12" fill="#131d2e" stroke="#1e293b" stroke-width="1" />
+  <text x="50" y="140" fill="#38bdf8" font-family="sans-serif" font-size="16" font-weight="700">CAN XL Frame Synthesizer &amp; Header</text>
+  
+  <!-- Priority ID -->
+  <rect x="50" y="165" width="250" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="65" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">Priority ID (11-bit Arbitration)</text>
+  <text x="65" y="205" fill="#f8fafc" font-family="monospace" font-size="14" font-weight="600">0x07A (122)</text>
+
+  <!-- VCID -->
+  <rect x="320" y="165" width="240" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="335" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">VCID (8-bit Virtual CAN ID)</text>
+  <text x="335" y="205" fill="#f8fafc" font-family="monospace" font-size="14" font-weight="600">0x01 (Body Domain)</text>
+
+  <!-- SDU Type -->
+  <rect x="50" y="230" width="250" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="65" y="250" fill="#94a3b8" font-family="sans-serif" font-size="11">SDU Type (8-bit Protocol)</text>
+  <text x="65" y="270" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">0x02: IEEE 802.3 Ethernet</text>
+
+  <!-- Acceptance Field -->
+  <rect x="320" y="230" width="240" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="335" y="250" fill="#94a3b8" font-family="sans-serif" font-size="11">Acceptance Field (32-bit Filter)</text>
+  <text x="335" y="270" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">0xA1B2C3D4</text>
+
+  <!-- Frame Flags Badge Grid -->
+  <g transform="translate(50, 300)">
+    <rect x="0" y="0" width="115" height="40" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="15" y="25" fill="#10b981" font-family="monospace" font-size="12">XLF=1 (Rec)</text>
+
+    <rect x="125" y="0" width="115" height="40" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="140" y="25" fill="#10b981" font-family="monospace" font-size="12">FDF=1 (Rec)</text>
+
+    <rect x="250" y="0" width="115" height="40" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="265" y="25" fill="#10b981" font-family="monospace" font-size="12">IDE=0 (Dom)</text>
+
+    <rect x="375" y="0" width="135" height="40" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="390" y="25" fill="#10b981" font-family="monospace" font-size="12">DLC=64 (64 B)</text>
+  </g>
+
+  <!-- Payload Box -->
+  <text x="50" y="375" fill="#94a3b8" font-family="sans-serif" font-size="12">CiA 611-1 Ethernet Encapsulation Payload (ASCII / Hex):</text>
+  <rect x="50" y="390" width="510" height="110" rx="8" fill="#0b1320" stroke="#1e293b" stroke-width="1" />
+  <text x="65" y="415" fill="#e2e8f0" font-family="monospace" font-size="12">ETH [DA: 02:00:00:00:00:02 SA: 02:00:00:00:00:01 TYPE: 0x0800]</text>
+  <text x="65" y="440" fill="#a5b4fc" font-family="monospace" font-size="11">Payload: 45 00 00 28 00 01 00 00 40 06 7c c2 0a 00 00 01 0a 00 00 02</text>
+  <text x="65" y="465" fill="#64748b" font-family="monospace" font-size="11">Data Length: 64 bytes (Max 2,048 octets supported without fragmentation)</text>
+
+  <!-- Dual CRC Indicator -->
+  <rect x="50" y="520" width="510" height="70" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="65" y="542" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="700">Dual Hardware CRC Validation Engine</text>
+  <text x="65" y="565" fill="#f8fafc" font-family="monospace" font-size="12">13-bit PCRC: <tspan fill="#10b981">0x153A (Valid)</tspan>  |  32-bit FCRC: <tspan fill="#10b981">0xC323D423 (Valid)</tspan></text>
+  <text x="65" y="580" fill="#94a3b8" font-family="sans-serif" font-size="10">Hamming Distance 6 Guarantee | Header Protection before Baud Rate Switch</text>
+
+  <rect x="50" y="605" width="510" height="45" rx="8" fill="url(#primary)" />
+  <text x="180" y="633" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="700">Synthesize &amp; Audit CAN XL Stream</text>
+
+  <!-- Right Column: 10-Point Normative Auditor & Dissector -->
+  <rect x="610" y="105" width="560" height="565" rx="12" fill="#131d2e" stroke="#1e293b" stroke-width="1" />
+  <text x="635" y="140" fill="#10b981" font-family="sans-serif" font-size="16" font-weight="700">ISO 11898-1:2024 Normative Compliance Auditor</text>
+  <text x="635" y="160" fill="#94a3b8" font-family="sans-serif" font-size="11">Zero-Trust Protocol Conformance &amp; Bus Contention Verification</text>
+
+  <!-- Audit List Items -->
+  <g transform="translate(635, 180)">
+    <!-- Item 1 -->
+    <rect x="0" y="0" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="19" r="7" fill="#10b981" />
+    <text x="16" y="23" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-01: XLF/FDF Framing Flags Active [PASS]</text>
+
+    <!-- Item 2 -->
+    <rect x="0" y="44" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="63" r="7" fill="#10b981" />
+    <text x="16" y="67" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="67" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-02: 11-Bit Priority ID Range Bound [PASS]</text>
+
+    <!-- Item 3 -->
+    <rect x="0" y="88" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="107" r="7" fill="#10b981" />
+    <text x="16" y="111" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="111" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-03: Maximum Data Length &lt;= 2,048 B [PASS]</text>
+
+    <!-- Item 4 -->
+    <rect x="0" y="132" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="151" r="7" fill="#10b981" />
+    <text x="16" y="155" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="155" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-04: SDU Type Standard Registered [PASS]</text>
+
+    <!-- Item 5 -->
+    <rect x="0" y="176" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="195" r="7" fill="#10b981" />
+    <text x="16" y="199" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="199" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-05: VCID Virtual Domain Isolated [PASS]</text>
+
+    <!-- Item 6 -->
+    <rect x="0" y="220" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="239" r="7" fill="#10b981" />
+    <text x="16" y="243" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="243" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-06: Acceptance Field 32-Bit Mask [PASS]</text>
+
+    <!-- Item 7 -->
+    <rect x="0" y="264" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="283" r="7" fill="#10b981" />
+    <text x="16" y="287" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="287" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-07: 13-Bit PCRC Header Polynomial [PASS]</text>
+
+    <!-- Item 8 -->
+    <rect x="0" y="308" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="327" r="7" fill="#10b981" />
+    <text x="16" y="331" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="331" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-08: 32-Bit FCRC Data Integrity [PASS]</text>
+
+    <!-- Item 9 -->
+    <rect x="0" y="352" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="371" r="7" fill="#10b981" />
+    <text x="16" y="375" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="375" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-09: CiA 611-1 Ethernet Header Valid [PASS]</text>
+
+    <!-- Item 10 -->
+    <rect x="0" y="396" width="510" height="38" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="20" cy="415" r="7" fill="#38bdf8" />
+    <text x="16" y="419" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">i</text>
+    <text x="40" y="419" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CANXL-10: Bus Starvation &amp; Priority Clearance [PASS]</text>
+  </g>
+
+  <!-- Bottom Dissector Strip -->
+  <rect x="635" y="630" width="510" height="30" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="645" y="650" fill="#94a3b8" font-family="monospace" font-size="11">Raw Bitstream: SOF | PRIO(11) | XLF(1) | RES(1) | SDU(8) | VCID(8) | DLC(11) | PCRC(13) | DATA... | FCRC(32) | EOF</text>
+
+</svg>
